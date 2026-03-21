@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 import type { InstrumentMeta, FhirQuestionnaireResponse } from "@/lib/screening/types";
 import { scoreFromQuestionnaireResponse } from "@/lib/screening/score";
-import { Button } from "@/components/ui/button";
 import { ResultDisplay } from "./result-display";
 
 // Dynamic import — formbox uses browser APIs

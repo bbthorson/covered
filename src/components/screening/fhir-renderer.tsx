@@ -1,5 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+/**
+ * Thin wrapper around @formbox/renderer.
+ * Type casts are necessary because formbox's internal FHIR types
+ * don't exactly match our simplified types — both are valid R4.
+ */
 import Renderer from "@formbox/renderer";
 import { theme } from "@formbox/hs-theme";
 import "@formbox/hs-theme/style.css";

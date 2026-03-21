@@ -1,10 +1,8 @@
-import type { FhirAnswerOption, FhirQuestionnaireItem, FhirExtension } from "./types";
+import type { FhirQuestionnaireItem } from "./types";
 
 const ITEM_WEIGHT_URL = "http://hl7.org/fhir/StructureDefinition/itemWeight";
 const CALCULATED_EXPRESSION_URL =
   "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression";
-const ORDINAL_VALUE_URL =
-  "http://hl7.org/fhir/StructureDefinition/ordinalValue";
 
 /**
  * Create a choice question item with weighted answer options.
