@@ -3,24 +3,49 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.6"
+    "@formbox/hs-theme": "^0.3.0",
+    "@formbox/renderer": "^0.3.0",
+    "@hookform/resolvers": "^5.2.2",
+    "@lhncbc/ucum-lhc": "^7.1.6",
+    "@tanstack/react-query": "^5.91.3",
+    "clsx": "^2.1.1",
+    "fhirpath": "^4.9.1",
+    "lucide-react": "^0.577.0",
+    "mobx": "^6.15.0",
+    "mobx-react-lite": "^4.1.1",
+    "mobx-utils": "^6.1.1",
+    "next": "^15.3.3",
+    "next-mdx-remote": "^6.0.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-hook-form": "^7.71.2",
+    "tailwind-merge": "^3.5.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9",
+    "eslint-config-next": "^15.3.3",
+    "happy-dom": "^20.8.4",
+    "jsdom": "^27.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.6"
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^4.1.0"
   }
 }
