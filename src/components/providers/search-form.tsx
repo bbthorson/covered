@@ -71,41 +71,42 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="flex flex-col sm:flex-row gap-3">
-        <div className="flex-1">
-          <Input
-            placeholder="Enter address, city, or zip code"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-            aria-label="Search location"
-          />
+      <div className="flex flex-col gap-3">
+        <Input
+          placeholder="Enter address, city, or zip code"
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
+          aria-label="Search location"
+        />
+        <div className="flex gap-3">
+          <Button
+            type="button"
+            variant="outline"
+            onClick={handleGeolocation}
+            disabled={geoLoading}
+            title="Use my current location"
+            className="flex-1 sm:flex-none"
+          >
+            {geoLoading ? (
+              <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+            ) : (
+              <LocateFixed className="h-4 w-4" aria-hidden="true" />
+            )}
+            My Location
+          </Button>
+          <Button type="submit" disabled={isLoading || (!address.trim())} className="flex-1 sm:flex-none">
+            {isLoading ? (
+              <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+            ) : (
+              <Search className="h-4 w-4" aria-hidden="true" />
+            )}
+            Search
+          </Button>
         </div>
-        <Button
-          type="button"
-          variant="outline"
-          onClick={handleGeolocation}
-          disabled={geoLoading}
-          title="Use my current location"
-        >
-          {geoLoading ? (
-            <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-          ) : (
-            <LocateFixed className="h-4 w-4" aria-hidden="true" />
-          )}
-          <span className="hidden sm:inline">My Location</span>
-        </Button>
-        <Button type="submit" disabled={isLoading || (!address.trim())}>
-          {isLoading ? (
-            <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-          ) : (
-            <Search className="h-4 w-4" aria-hidden="true" />
-          )}
-          Search
-        </Button>
       </div>
 
       <div className="flex gap-3">
-        <div className="w-40">
+        <div className="flex-1">
           <Select
             label="Distance"
             options={radiusOptions}
@@ -113,7 +114,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
             onChange={(e) => setRadius(e.target.value)}
           />
         </div>
-        <div className="w-48">
+        <div className="flex-1">
           <Select
             label="Facility type"
             options={typeOptions}

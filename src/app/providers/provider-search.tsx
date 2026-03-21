@@ -98,7 +98,7 @@ export function ProviderSearch() {
   return (
     <>
       {/* Cross-link to screening */}
-      <div className="max-w-3xl mx-auto mb-8 p-4 bg-primary-50 border border-primary-200 rounded-lg flex items-center gap-3">
+      <div className="max-w-3xl mx-auto mb-4 p-4 bg-primary-50 border border-primary-200 rounded-lg flex items-center gap-3">
         <ClipboardCheck
           className="h-5 w-5 text-primary-600 shrink-0"
           aria-hidden="true"

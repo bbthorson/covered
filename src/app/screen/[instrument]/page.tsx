@@ -37,7 +37,7 @@ export default async function InstrumentPage({
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-3xl mx-auto py-12" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
       <Link href="/screen">
         <Button variant="ghost" size="sm" className="mb-6">
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
