@@ -13,9 +13,9 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Screening Tools",
+  title: "Check In",
   description:
-    "Free, confidential screening questionnaires to help you understand your relationship with alcohol and substances.",
+    "Free, private screenings to help you understand your relationship with alcohol and substances. No data stored, no sign-up needed.",
 };
 
 const instruments = [
@@ -24,7 +24,7 @@ const instruments = [
     name: "AUDIT",
     fullName: "Alcohol Use Disorders Identification Test",
     description:
-      "A 10-question screening tool developed by the World Health Organization to assess alcohol consumption, drinking behaviors, and alcohol-related problems.",
+      "10 questions about your drinking patterns — how often, how much, and how it affects your life. Developed by the World Health Organization.",
     questionCount: 10,
     timeEstimate: "2-3 minutes",
     focus: "Alcohol",
@@ -34,7 +34,7 @@ const instruments = [
     name: "DAST-10",
     fullName: "Drug Abuse Screening Test",
     description:
-      "A 10-question screening tool that assesses drug use (excluding alcohol and tobacco) over the past 12 months.",
+      "10 questions about your experience with drugs (not including alcohol or tobacco) over the past year.",
     questionCount: 10,
     timeEstimate: "2-3 minutes",
     focus: "Drugs",
@@ -44,7 +44,7 @@ const instruments = [
     name: "CAGE",
     fullName: "CAGE Questionnaire",
     description:
-      "A quick 4-question screening tool widely used to identify problems with alcohol use. Named after its four questions: Cut down, Annoyed, Guilty, Eye-opener.",
+      "Just 4 questions. A quick way to reflect on your relationship with alcohol. Named after its themes: Cut down, Annoyed, Guilty, Eye-opener.",
     questionCount: 4,
     timeEstimate: "1 minute",
     focus: "Alcohol",
@@ -56,22 +56,22 @@ export default function ScreenPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold text-warm-900">
-          Screening Tools
+          Check In With Yourself
         </h1>
         <p className="mt-4 text-lg text-warm-500">
-          These free, confidential screenings can help you better understand
-          your relationship with alcohol or substances. Choose the one that
-          fits your situation.
+          These quick, private screenings can help you get a clearer picture of
+          where you stand. Your answers stay in your browser — we never see
+          them.
         </p>
       </div>
 
       {/* Disclaimer */}
       <div className="max-w-3xl mx-auto mb-8 p-4 bg-warm-50 border border-warm-200 rounded-lg">
         <p className="text-sm text-warm-600">
-          <strong>Important:</strong> These screening tools are for informational
-          purposes only. They are not a diagnosis and should not replace a
-          professional evaluation. If you are concerned about your substance use,
-          please consult a healthcare provider.
+          <strong>A note:</strong> These screenings are a starting point, not a
+          diagnosis. They can help you reflect and decide if you want to talk to
+          someone — but they don&apos;t replace a conversation with a healthcare
+          provider.
         </p>
       </div>
 
@@ -91,7 +91,7 @@ export default function ScreenPage() {
             <CardContent className="flex-1">
               <p className="text-sm text-warm-600">{instrument.description}</p>
               <p className="mt-3 text-xs text-warm-400">
-                Estimated time: {instrument.timeEstimate}
+                Takes about {instrument.timeEstimate}
               </p>
             </CardContent>
             <CardFooter>

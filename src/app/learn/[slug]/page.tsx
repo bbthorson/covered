@@ -93,7 +93,7 @@ export default async function ArticlePage({
             aria-hidden="true"
           />
           <span className="text-sm text-primary-800">
-            <strong>Take a screening</strong> to understand your risk level
+            <strong>Check in with yourself</strong> — a quick, private self-assessment
           </span>
         </Link>
         <Link
@@ -105,7 +105,7 @@ export default async function ArticlePage({
             aria-hidden="true"
           />
           <span className="text-sm text-primary-800">
-            <strong>Find providers</strong> near you
+            <strong>Find care</strong> near you
           </span>
         </Link>
       </div>

@@ -10,7 +10,7 @@ export default function NotFound() {
         Page not found
       </h2>
       <p className="mt-3 text-warm-500">
-        The page you&apos;re looking for doesn&apos;t exist or has been moved.
+        This page doesn&apos;t exist — but we&apos;re still here for you.
       </p>
 
       <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
@@ -23,13 +23,13 @@ export default function NotFound() {
         <Link href="/screen">
           <Button variant="outline">
             <ClipboardCheck className="h-4 w-4" aria-hidden="true" />
-            Take a Screening
+            Check In
           </Button>
         </Link>
         <Link href="/providers">
           <Button variant="outline">
             <Search className="h-4 w-4" aria-hidden="true" />
-            Find Providers
+            Find Care
           </Button>
         </Link>
         <Link href="/learn">
@@ -41,7 +41,7 @@ export default function NotFound() {
       </div>
 
       <p className="mt-12 text-sm text-warm-400">
-        Need immediate help? Call{" "}
+        Need to talk to someone? Call{" "}
         <a href="tel:988" className="text-primary-600 font-medium hover:underline">
           988
         </a>{" "}

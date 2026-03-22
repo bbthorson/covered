@@ -7,7 +7,7 @@ import { Search, ClipboardCheck } from "lucide-react";
 export const metadata: Metadata = {
   title: "Learn",
   description:
-    "Educational resources about substance use disorders, treatment options, recovery, and supporting loved ones.",
+    "Read up on substance use, treatment options, recovery, and how to support the people you care about — at your own pace.",
 };
 
 export default async function LearnPage() {
@@ -20,11 +20,11 @@ export default async function LearnPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold text-warm-900">
-          Learn About Substance Use Care
+          Learn at Your Own Pace
         </h1>
         <p className="mt-4 text-lg text-warm-500">
-          Educational resources to help you understand substance use disorders,
-          treatment options, recovery, and how to support loved ones.
+          Honest, approachable articles about substance use, treatment, recovery,
+          and supporting the people you care about. No jargon, no judgment.
         </p>
       </div>
 
@@ -39,7 +39,7 @@ export default async function LearnPage() {
             aria-hidden="true"
           />
           <span className="text-sm text-primary-800">
-            <strong>Take a screening</strong> to understand your risk level
+            <strong>Check in with yourself</strong> — a quick, private self-assessment
           </span>
         </Link>
         <Link
@@ -51,7 +51,7 @@ export default async function LearnPage() {
             aria-hidden="true"
           />
           <span className="text-sm text-primary-800">
-            <strong>Find providers</strong> near you
+            <strong>Find care</strong> near you
           </span>
         </Link>
       </div>

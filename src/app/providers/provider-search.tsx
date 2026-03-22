@@ -104,14 +104,14 @@ export function ProviderSearch() {
           aria-hidden="true"
         />
         <p className="text-sm text-primary-800">
-          Not sure what level of care you need?{" "}
+          Not sure where to start?{" "}
           <Link
             href="/screen"
             className="font-medium underline hover:no-underline"
           >
-            Take a quick screening
+            A quick check-in
           </Link>{" "}
-          first.
+          can help you figure out what kind of support might be right for you.
         </p>
       </div>
 
@@ -148,8 +148,7 @@ export function ProviderSearch() {
       {!results && !error && !isLoading && (
         <div className="max-w-3xl mx-auto text-center py-12">
           <p className="text-warm-400 text-sm">
-            Enter an address or use your location to find nearby treatment
-            facilities.
+            Enter an address or use your location to find care options nearby.
           </p>
           <p className="text-warm-400 text-xs mt-2">
             Data provided by SAMHSA&apos;s{" "}

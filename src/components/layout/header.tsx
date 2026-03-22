@@ -7,8 +7,8 @@ import { MobileNav } from "./mobile-nav";
 import { Heart } from "lucide-react";
 
 const navLinks = [
-  { href: "/screen", label: "Screening" },
-  { href: "/providers", label: "Find Providers" },
+  { href: "/screen", label: "Check In" },
+  { href: "/providers", label: "Find Care" },
   { href: "/learn", label: "Learn" },
   { href: "/about", label: "About" },
 ];

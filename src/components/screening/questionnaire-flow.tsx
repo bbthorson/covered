@@ -56,8 +56,8 @@ export function QuestionnaireFlow({ instrument }: QuestionnaireFlowProps) {
       {/* Disclaimer */}
       <div className="mb-6 p-3 bg-warm-50 border border-warm-200 rounded-lg">
         <p className="text-xs text-warm-500">
-          This screening is confidential and not stored. It is not a diagnosis —
-          please consult a healthcare provider for professional evaluation.
+          Your answers are completely private — they stay in your browser and
+          are never stored or sent anywhere. This is a starting point, not a diagnosis.
         </p>
       </div>
 

@@ -64,10 +64,10 @@ export function ResultDisplay({
       {/* Disclaimer */}
       <div className="p-4 bg-warm-50 border border-warm-200 rounded-lg">
         <p className="text-sm text-warm-600">
-          <strong>Important:</strong> This screening result is not a diagnosis.
-          It is a tool to help you understand your situation and decide on next
-          steps. Please consult a qualified healthcare provider for professional
-          evaluation and advice.
+          <strong>Keep in mind:</strong> This result isn&apos;t a diagnosis — it&apos;s
+          a way to understand where you are right now. Whatever the result, you
+          deserve support, and a healthcare provider can help you figure out
+          the best next step.
         </p>
       </div>
 
@@ -78,7 +78,7 @@ export function ResultDisplay({
             <Phone className="h-5 w-5 text-crisis-600 mt-0.5 shrink-0" aria-hidden="true" />
             <div>
               <p className="font-semibold text-crisis-700">
-                If you are in crisis or need immediate help:
+                If you need to talk to someone right now:
               </p>
               <ul className="mt-2 space-y-1 text-sm text-crisis-700">
                 <li>
@@ -125,7 +125,7 @@ export function ResultDisplay({
       <Card>
         <CardContent className="p-6 sm:p-8">
           <h3 className="text-lg font-semibold text-warm-900 mb-4">
-            Recommended Next Steps
+            Where to go from here
           </h3>
           <ul className="space-y-3">
             {result.recommendations.map((rec, i) => (
@@ -142,11 +142,11 @@ export function ResultDisplay({
       <div className="flex flex-col sm:flex-row gap-3">
         <Button onClick={onFindProviders} className="flex-1">
           <MapPin className="h-4 w-4" aria-hidden="true" />
-          Find Treatment Providers
+          Find Care Near You
         </Button>
         <Link href="/learn" className="flex-1">
           <Button variant="outline" className="w-full">
-            Learn More About Treatment
+            Learn More
           </Button>
         </Link>
         <Button variant="ghost" onClick={onRestart}>

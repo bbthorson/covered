@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About Covered — a free, open-source tool to help people find substance use care.",
+    "About Covered — free, open-source tools that have your back when it comes to substance use and mental health care.",
 };
 
 export default function AboutPage() {
@@ -17,44 +17,47 @@ export default function AboutPage() {
       <div className="prose prose-warm max-w-none space-y-6">
         <section>
           <h2 className="text-xl font-semibold text-warm-900 mt-8 mb-3">
-            Our Mission
+            Why We Built This
           </h2>
           <p className="text-warm-600 leading-relaxed">
-            Covered is a free, open-source application designed to help people
-            navigate substance use care. We believe that access to screening
-            tools, provider information, and educational resources should be
-            available to everyone — without cost, without sign-up, and without
-            stigma.
+            Stress and substances are part of life. Sometimes the relationship
+            shifts, and you want to understand where you stand — or you want to
+            help someone you care about. Covered exists to make that easier.
+          </p>
+          <p className="text-warm-600 leading-relaxed mt-3">
+            We&apos;re a free, open-source set of tools designed to help you check
+            in with yourself, find care near you, and learn at your own pace —
+            without cost, without sign-up, and without judgment.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-warm-900 mt-8 mb-3">
-            What We Provide
+            Three Ways We&apos;ve Got Your Back
           </h2>
           <ul className="list-disc pl-6 space-y-2 text-warm-600">
             <li>
-              <strong>Screening Tools:</strong> Validated questionnaires (AUDIT,
-              DAST-10, CAGE) to help you understand your risk level. These are
-              not diagnoses — they are starting points for conversation with a
-              healthcare provider.
+              <strong>Check In:</strong> Quick, private self-assessments (AUDIT,
+              DAST-10, CAGE) that help you reflect on your relationship with
+              substances. They&apos;re not diagnoses — just a starting point for
+              whatever comes next.
             </li>
             <li>
-              <strong>Provider Search:</strong> A search tool powered by
-              SAMHSA&apos;s FindTreatment.gov API that helps you find substance use
-              and mental health treatment facilities near you.
+              <strong>Find Care:</strong> Search thousands of providers and
+              programs near you, powered by SAMHSA&apos;s FindTreatment.gov — from
+              counseling to residential care.
             </li>
             <li>
-              <strong>Educational Resources:</strong> Articles sourced from
-              SAMHSA and other trusted public health organizations to help you
-              understand substance use disorders, treatment options, and recovery.
+              <strong>Learn:</strong> Honest, approachable articles about
+              substance use, treatment options, recovery, and supporting the
+              people you care about.
             </li>
           </ul>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-warm-900 mt-8 mb-3">
-            Data Sources
+            Built on Data You Can Trust
           </h2>
           <p className="text-warm-600 leading-relaxed">
             Provider data comes from{" "}
@@ -75,13 +78,13 @@ export default function AboutPage() {
 
         <section>
           <h2 className="text-xl font-semibold text-warm-900 mt-8 mb-3">
-            Privacy
+            Your Privacy Comes First
           </h2>
           <p className="text-warm-600 leading-relaxed">
             Covered does not collect, store, or transmit any personal data.
-            Screening responses are processed entirely in your browser and are
-            never sent to our servers. Provider searches are forwarded to
-            SAMHSA&apos;s API on your behalf — we do not log search queries.
+            Screening responses are processed entirely in your browser — they
+            never leave your device. Provider searches are forwarded to
+            SAMHSA&apos;s API on your behalf, and we don&apos;t log search queries.
           </p>
         </section>
 
@@ -90,9 +93,9 @@ export default function AboutPage() {
             Open Source & API
           </h2>
           <p className="text-warm-600 leading-relaxed">
-            Covered is open-source and provides a public API so that other
-            applications can integrate substance use care tools into their own
-            platforms. See our{" "}
+            Covered is open-source. We also offer a public API so other apps and
+            organizations can integrate these tools into their own platforms. See
+            our{" "}
             <Link href="/api/v1" className="text-primary-600 underline hover:no-underline">
               API documentation
             </Link>{" "}
@@ -102,14 +105,13 @@ export default function AboutPage() {
 
         <section className="mt-12 p-6 bg-warm-50 border border-warm-200 rounded-lg">
           <h2 className="text-lg font-semibold text-warm-900 mb-2">
-            Disclaimer
+            A note
           </h2>
           <p className="text-sm text-warm-600">
-            This tool is for informational purposes only and is not a substitute
-            for professional medical advice, diagnosis, or treatment. Always seek
-            the advice of a qualified healthcare provider with any questions you
-            may have regarding a medical condition. If you are in crisis, please
-            call{" "}
+            Covered is here to inform and support — it&apos;s not a substitute for
+            professional medical advice, diagnosis, or treatment. A healthcare
+            provider is always the best person to talk to about your specific
+            situation. If you need to talk to someone right now, call{" "}
             <a href="tel:988" className="font-semibold text-crisis-600">
               988
             </a>{" "}
@@ -117,7 +119,7 @@ export default function AboutPage() {
             <a href="tel:1-800-662-4357" className="font-semibold text-crisis-600">
               1-800-662-4357
             </a>{" "}
-            (SAMHSA Helpline).
+            (SAMHSA Helpline — free, 24/7).
           </p>
         </section>
       </div>
