@@ -12,34 +12,34 @@ export function Footer() {
               Covered
             </Link>
             <p className="mt-2 text-sm text-warm-500">
-              Free, open-source tools to help people find substance use care.
-              Powered by SAMHSA data.
+              We&apos;ve got you. Free tools to check in, find care, and learn —
+              no sign-up, no judgment.
             </p>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-warm-900 mb-3">Resources</h3>
+            <h3 className="text-sm font-semibold text-warm-900 mb-3">Explore</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/screen" className="text-warm-500 hover:text-warm-700">
-                  Screening Tools
+                  Check In
                 </Link>
               </li>
               <li>
                 <Link href="/providers" className="text-warm-500 hover:text-warm-700">
-                  Find Providers
+                  Find Care
                 </Link>
               </li>
               <li>
                 <Link href="/learn" className="text-warm-500 hover:text-warm-700">
-                  Educational Resources
+                  Learn
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-warm-900 mb-3">Crisis Support</h3>
+            <h3 className="text-sm font-semibold text-warm-900 mb-3">Need to Talk?</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="tel:988" className="text-warm-500 hover:text-warm-700">
@@ -57,12 +57,11 @@ export function Footer() {
 
         <div className="mt-8 pt-8 border-t border-warm-200">
           <p className="text-xs text-warm-400 text-center">
-            This tool is for informational purposes only and is not a substitute for
-            professional medical advice, diagnosis, or treatment. If you are in
-            crisis, please call 988 or go to your nearest emergency room.
+            Covered is here to inform and support — not to replace professional
+            medical advice. If you need to talk to someone right now, call 988.
           </p>
           <p className="text-xs text-warm-400 text-center mt-2">
-            Data sourced from SAMHSA&apos;s FindTreatment.gov. This is an open-source project.
+            Provider data from SAMHSA&apos;s FindTreatment.gov. Open-source and always free.
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ export function CrisisBanner() {
   return (
     <div className="bg-crisis-700 text-white px-4 py-2 text-center text-sm">
       <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-        <span className="font-medium">Need immediate help?</span>
+        <span className="font-medium">Need to talk to someone?</span>
         <span className="flex items-center gap-1.5">
           <Phone className="h-3.5 w-3.5" aria-hidden="true" />
           <span>

@@ -24,7 +24,7 @@ export function ProviderList({
     return (
       <div className="text-center py-12">
         <p className="text-warm-500">
-          No providers found. Try expanding your search radius or changing filters.
+          No results in this area. Try expanding the distance or adjusting your filters.
         </p>
       </div>
     );

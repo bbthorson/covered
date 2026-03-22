@@ -14,29 +14,29 @@ const pillars = [
   {
     href: "/screen",
     icon: ClipboardCheck,
-    title: "Evaluate Your Risk",
+    title: "Check In With Yourself",
     description:
-      "Take a free, confidential screening to better understand your relationship with alcohol or substances.",
-    cta: "Start Screening",
+      "Quick, private screenings to help you understand where you stand with alcohol or substances. No judgment, just clarity.",
+    cta: "Take a Screening",
     color: "text-primary-600",
     bgColor: "bg-primary-50",
   },
   {
     href: "/providers",
     icon: MapPin,
-    title: "Find Providers",
+    title: "Find Care Near You",
     description:
-      "Search for substance use and mental health treatment facilities near you, powered by SAMHSA data.",
-    cta: "Search Providers",
+      "Search for providers and programs in your area. From outpatient support to residential care — whatever fits your life.",
+    cta: "Search Nearby",
     color: "text-primary-600",
     bgColor: "bg-primary-50",
   },
   {
     href: "/learn",
     icon: BookOpen,
-    title: "Learn",
+    title: "Learn at Your Own Pace",
     description:
-      "Educational resources about substance use disorders, treatment options, recovery, and supporting loved ones.",
+      "Straightforward articles about what care looks like, what to expect, and how to support someone you love.",
     cta: "Explore Resources",
     color: "text-primary-600",
     bgColor: "bg-primary-50",
@@ -51,24 +51,25 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-warm-900">
-              You&apos;re not alone.{" "}
-              <span className="text-primary-600">Help is here.</span>
+              You deserve to feel{" "}
+              <span className="text-primary-600">Covered.</span>
             </h1>
             <p className="mt-6 text-lg text-warm-600 leading-relaxed">
-              Covered is a free, open-source tool that helps you understand your
-              risk, find treatment providers near you, and learn about substance
-              use care — all in one place, with no sign-up required.
+              Life gets complicated. Whether you&apos;re questioning your own
+              relationship with substances or looking out for someone you care
+              about, we&apos;re here with free tools, real information, and zero
+              judgment.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/screen">
                 <Button size="lg">
-                  Take a Free Screening
+                  Check In With Yourself
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Button>
               </Link>
               <Link href="/providers">
                 <Button variant="outline" size="lg">
-                  Find Providers Near You
+                  Find Care Near You
                 </Button>
               </Link>
             </div>
@@ -80,11 +81,11 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-warm-900">
-            How Covered Can Help
+            Three ways we&apos;ve got your back
           </h2>
           <p className="mt-3 text-warm-500 max-w-2xl mx-auto">
-            Whether you&apos;re concerned about yourself or a loved one, these
-            tools can help you take the next step.
+            No accounts, no data stored, no strings attached. Just tools
+            that meet you where you are.
           </p>
         </div>
 
@@ -119,15 +120,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-xl font-semibold text-warm-900">
-              Powered by Trusted Data
+              Built on data you can trust
             </h2>
             <p className="mt-3 text-sm text-warm-500">
-              Provider data comes directly from SAMHSA&apos;s FindTreatment.gov,
-              the official U.S. government resource for finding substance use
-              and mental health treatment facilities. Screening tools use
-              validated, peer-reviewed instruments recommended by the World
-              Health Organization and the National Institute on Alcohol Abuse and
-              Alcoholism.
+              Provider information comes directly from SAMHSA&apos;s
+              FindTreatment.gov — the official U.S. government resource for
+              finding care. Screenings use validated instruments from the World
+              Health Organization and other leading health bodies. We just make
+              it easier to access.
             </p>
           </div>
         </div>

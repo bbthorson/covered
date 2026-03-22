@@ -12,15 +12,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Covered — Find Substance Use Care",
+    default: "Covered — We've Got You",
     template: "%s | Covered",
   },
   description:
-    "Free, open-source tools to evaluate your risk, find treatment providers, and learn about substance use care. Powered by SAMHSA data.",
+    "Free tools to check in with yourself, find care near you, and learn about managing your relationship with substances. No sign-up, no judgment.",
   openGraph: {
-    title: "Covered — Find Substance Use Care",
+    title: "Covered — We've Got You",
     description:
-      "Free, open-source tools to evaluate your risk, find treatment providers, and learn about substance use care.",
+      "Free tools to check in with yourself, find care near you, and learn about managing your relationship with substances.",
     type: "website",
   },
 };
